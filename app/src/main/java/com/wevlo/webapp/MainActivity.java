@@ -1,0 +1,2 @@
+package com.wevlo.webapp;
+import android.app.Activity;import android.os.Bundle;import android.webkit.*;public class MainActivity extends Activity{private WebView wv;@Override protected void onCreate(Bundle b){super.onCreate(b);wv=new WebView(this);wv.getSettings().setJavaScriptEnabled(true);wv.setWebViewClient(new WebViewClient());wv.loadUrl("https://ludosafe.com");setContentView(wv);}}
